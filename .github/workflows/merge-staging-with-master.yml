@@ -21,6 +21,8 @@ jobs:
       run: |
           git fetch --unshallow
           git checkout master
+          git branch master-prod-last
           git pull
           git merge --no-ff staging -m "Auto-merge staging to master"
           git push
+          git push origin master-prod-last
