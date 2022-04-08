@@ -1,4 +1,4 @@
-name: PRs to staging
+name: Merge staging to master when PR closed
 
 on: 
   pull_request:
